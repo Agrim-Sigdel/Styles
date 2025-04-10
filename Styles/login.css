@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  font-size: 24px;
+  font-weight: 400;
+  color: #434040;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav .left ul,
+nav .right ul {
+  display: flex;
+  gap: 60px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #434040;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav .middle img {
+  height: 146px;
+  width: 194px;
+}
+
+nav .right ul li i {
+  color: #434040;
+}
+
+.login_box {
+  width: 40%;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 40px;
+}
+
+.login_box .text {
+  font-size: 48px;
+  color: #8a6f5e;
+}
+
+.login_box .input_type {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login_box input {
+  font-size: 32px;
+  border: none;
+  border-bottom: 2px solid #434040;
+}
+
+.login_box button {
+  width: 30%;
+  height: 70px;
+  background-color: white;
+  border: 2px solid #8a6f5e;
+  font-size: 32px;
+  color: #434040;
+  cursor: pointer;
+}
+
+.login_box .register p {
+  font-size: 32px;
+}
+
+.login_box .register button {
+  width: 100%;
+  height: 70px;
+}
+
+.login_box .register button:hover {
+  background-color: #8a6f5e;
+  color: #fff;
+}
+.user-icon {
+  position: relative;
+}
+
+.user-icon i {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.user-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+.user-menu a,
+.user-menu p {
+  margin: 0.5rem 0;
+  color: #333;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.user-menu button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-10%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
